@@ -1,0 +1,8 @@
+name: ember-kns-helpers
+windows:
+  - vim: nvim
+  - terminal:
+  - terminal:
+  - terminal:
+  - tests: ember test --server
+  - server: ember server

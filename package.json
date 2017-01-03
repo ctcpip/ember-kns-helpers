@@ -1,12 +1,11 @@
 {
   "name": "ember-kns-helpers",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Shared helpers for all Ember apps in Kinesis",
   "keywords": [
     "ember-addon"
   ],
-  "license": "MIT",
-  "author": "",
+  "author": "Kinesis <devs@kinesis.org>",
   "directories": {
     "doc": "doc",
     "test": "tests"
