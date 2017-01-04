@@ -1,5 +1,7 @@
 import Helper from 'ember-helper';
-import isBlank from 'ember-utils';
+import Ember from 'ember';
+
+const { isBlank } = Ember;
 
 export function formatNumericTwo([value]) {
   if (isBlank(value) || isNaN(value)) {

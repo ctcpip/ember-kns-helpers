@@ -1,5 +1,7 @@
+import Ember from 'ember';
 import Helper from 'ember-helper';
-import isBlank from 'ember-utils';
+
+const { isBlank } = Ember;
 
 Number.isNaN = Number.isNaN || function(value) {
   return typeof value === 'number' && value !== value;

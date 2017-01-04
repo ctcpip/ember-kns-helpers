@@ -1,5 +1,7 @@
-import { isPresent as emberIsPresent } from 'ember-utils';
+import Ember from 'ember';
 import Helper from 'ember-helper';
+
+const { isPresent: emberIsPresent } = Ember;
 
 export function isPresent([value]) {
   return emberIsPresent(value);

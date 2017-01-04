@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('format-time-from-now', 'Integration | helper || {{format-time-from-now}}', {
+moduleForComponent('format-time-from-now', 'Integration | helper | {{format-time-from-now}}', {
   integration: true
 });
 
