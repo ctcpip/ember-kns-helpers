@@ -5,7 +5,7 @@ dependencies:
   cache_directories:
     - "~/nvm"
   pre:
-    - npm -g install ember-cli@2.3.0
+    - npm -g install ember-cli
     - npm -g install bower
     - bower cache clean
     - npm cache clean
