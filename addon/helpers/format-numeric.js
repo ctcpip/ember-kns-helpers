@@ -1,5 +1,5 @@
 import Helper from 'ember-helper';
-import isBlank from 'ember-util';
+import isBlank from 'ember-utils';
 
 Number.isNaN = Number.isNaN || function(value) {
   return typeof value === 'number' && value !== value;

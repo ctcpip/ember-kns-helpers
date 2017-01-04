@@ -1,6 +1,6 @@
 import Helper from 'ember-helper';
 import moment from 'moment';
-import isEqual from 'ember-util';
+import isEqual from 'ember-utils';
 
 export function formatDateRange([startedOn, endedOn]) {
   if (startedOn && endedOn) {

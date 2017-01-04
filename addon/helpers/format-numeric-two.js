@@ -1,5 +1,5 @@
 import Helper from 'ember-helper';
-import isBlank from 'ember-util';
+import isBlank from 'ember-utils';
 
 export function formatNumericTwo([value]) {
   if (isBlank(value) || isNaN(value)) {
