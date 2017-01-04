@@ -1,6 +1,5 @@
-/* jshint undef:false */
-
 import Helper from 'ember-helper';
+import moment from 'moment';
 
 export function formatTimeFromNow([value]) {
   // Set the relative time threshold for months to 30 days.

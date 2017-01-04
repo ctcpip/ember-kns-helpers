@@ -1,5 +1,3 @@
-/* jshint undef:false */
-
 import Ember from 'ember';
 
 export function fiscalYearLabel([input]) {
