@@ -1,6 +1,6 @@
-/* global moment */
-
-import Ember from 'ember';
+import Helper from 'ember-helper';
+import moment from 'moment';
+import isEqual from 'ember-util';
 
 export function formatDateRange([startedOn, endedOn]) {
   if (startedOn && endedOn) {
@@ -9,12 +9,12 @@ export function formatDateRange([startedOn, endedOn]) {
     let format = '';
 
     // Same year
-    if (Ember.isEqual(start.get('year'), end.get('year'))) {
+    if (isEqual(start.get('year'), end.get('year'))) {
 
       // Same month
-      if (Ember.isEqual(start.get('month'), end.get('month'))) {
+      if (isEqual(start.get('month'), end.get('month'))) {
         // Same day
-        if (Ember.isEqual(start.get('date'), end.get('date'))) {
+        if (isEqual(start.get('date'), end.get('date'))) {
           format = `${start.format('HH:mm')} - ${end.format('HH:mm, D MMM')}`;
         } else {
           format = `${start.format('D')} - ${end.format('D MMM')}`;
@@ -36,4 +36,4 @@ export function formatDateRange([startedOn, endedOn]) {
   }
 }
 
-export default Ember.Helper.helper(formatDateRange);
+export default Helper.helper(formatDateRange);

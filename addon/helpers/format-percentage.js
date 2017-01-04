@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Helper from 'ember-helper';
 
 export function formatPercentage([value]) {
   return `${ value * 100 }%`;
 }
 
-export default Ember.Helper.helper(formatPercentage);
+export default Helper.helper(formatPercentage);

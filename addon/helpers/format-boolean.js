@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Helper from 'ember-helper';
 
 export function formatBoolean([value]) {
   return value ? 'Yes' : 'No';
 }
 
-export default Ember.Helper.helper(formatBoolean);
+export default Helper.helper(formatBoolean);

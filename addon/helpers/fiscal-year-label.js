@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import Helper from 'ember-helper';
 
 export function fiscalYearLabel([input]) {
   if (input) {
@@ -24,4 +25,4 @@ export function fiscalYearLabel([input]) {
   }
 }
 
-export default Ember.Helper.helper(fiscalYearLabel);
+export default Helper.helper(fiscalYearLabel);

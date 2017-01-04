@@ -1,6 +1,5 @@
-/* jshint undef:false */
-
-import Ember from 'ember';
+import Helper from 'ember-helper';
+import moment from 'moment';
 
 export function formatDate([value, format]) {
   if (value) {
@@ -14,4 +13,4 @@ export function formatDate([value, format]) {
   }
 }
 
-export default Ember.Helper.helper(formatDate);
+export default Helper.helper(formatDate);

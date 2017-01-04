@@ -1,8 +1,9 @@
-import Ember from 'ember';
+import isPresent from 'ember-utils';
+import Helper from 'ember-helper';
 
 export function formatBlank([value, replacementValue]) {
   let replacement = (replacementValue) ? replacementValue : '-';
-  return Ember.isPresent(value) ? value : replacement;
+  return isPresent(value) ? value : replacement;
 }
 
-export default Ember.Helper.helper(formatBlank);
+export default Helper.helper(formatBlank);

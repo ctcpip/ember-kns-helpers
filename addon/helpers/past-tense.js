@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import Helper from 'ember-helper';
 
 export function pastTense([value]) {
   let exceptions = {
@@ -35,4 +35,4 @@ export function pastTense([value]) {
   return `${value}ed`;
 }
 
-export default Ember.Helper.helper(pastTense);
+export default Helper.helper(pastTense);

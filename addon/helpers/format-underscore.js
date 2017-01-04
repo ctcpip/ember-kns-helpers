@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import Helper from 'ember-helper';
+import { capitalize as emberCapitalize } from 'ember-string';
 
 export function formatUnderscore([value]) {
   if (value) {
-    return Ember.String.capitalize(value.split('_').join(' '));
+    return emberCapitalize(value.split('_').join(' '));
   } else {
     return '-';
   }
 }
 
-export default Ember.Helper.helper(formatUnderscore);
+export default Helper.helper(formatUnderscore);

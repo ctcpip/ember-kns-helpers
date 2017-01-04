@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import { isPresent as emberIsPresent } from 'ember-utils';
+import Helper from 'ember-helper';
 
 export function isPresent([value]) {
-  return Ember.isPresent(value);
+  return emberIsPresent(value);
 }
 
-export default Ember.Helper.helper(isPresent);
+export default Helper.helper(isPresent);

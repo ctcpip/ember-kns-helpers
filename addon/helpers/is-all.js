@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import Helper from 'ember-helper';
+import { A as emberArray } from 'ember-array/utils';
 
 export function isAll([_, c, r, n]) {
-  let collection = Ember.A(c);
-  let referenceCollection = Ember.A(r);
+  let collection = emberArray(c);
+  let referenceCollection = emberArray(r);
 
   if (n) {
-    return collection.length === n && collection.every(item => referenceCollection.includes(item));
+    return collection.length === n && collection.every((item) => referenceCollection.includes(item));
   } else {
     return collection.every((item) => {
       return referenceCollection.includes(item);
@@ -13,4 +14,4 @@ export function isAll([_, c, r, n]) {
   }
 }
 
-export default Ember.Helper.helper(isAll);
+export default Helper.helper(isAll);
