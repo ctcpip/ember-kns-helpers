@@ -3,12 +3,13 @@ machine:
    version: 4.7.0
 dependencies:
   cache_directories:
-    - "~/nvm"
+    - "/opt/circleci/nodejs/v4.7.0/lib/node_modules"
+    - "/opt/circleci/nodejs/v4.7.0/bin"
+    - "node_modules"
+    - "bower_components"
   pre:
-    - npm -g install ember-cli
-    - npm -g install bower
-    - bower cache clean
-    - npm cache clean
+    - type ember || npm -g install ember-cli
+    - type bower || npm -g install bower
   override:
     - npm install
     - bower install
