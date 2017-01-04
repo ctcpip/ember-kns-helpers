@@ -1,6 +1,6 @@
 # ember-kns-helpers
 
-Provides additional helpers specific for Kinesis' apps.
+Provides additional helpers for Kinesis' apps.
 
 ## Available helpers
 
