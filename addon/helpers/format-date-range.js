@@ -15,6 +15,7 @@ export function formatDateRange([startedOn, endedOn]) {
 
       // Same month
       if (isEqual(start.get('month'), end.get('month'))) {
+
         // Same day
         if (isEqual(start.get('date'), end.get('date'))) {
           format = `${start.format('HH:mm')} - ${end.format('HH:mm, D MMM')}`;

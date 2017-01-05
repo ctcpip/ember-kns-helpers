@@ -6,8 +6,7 @@ Provides additional helpers for Kinesis' apps.
 
 * [Truth](#truth-helpers)
   + [`is-present`](#is-present)
-  + [`is-all`](#is-all)
-  + [`has-any`](#has-any)
+  + [`deep-equal`](#deep-equal)
 * [Format](#format-helpers)
   + [`format-blank`](#format-blank)
   + [`format-boolean`](#format-boolean)
@@ -34,18 +33,66 @@ Uses built in `Ember.isPresent` to check for presence.
 {{#if (is-present someProp)}}
 {{/if}}
 ```
-
 **[⬆️ back to top](#available-helpers)**
 
-#### `is-all`
+#### `deep-equal`
 
-#### `has-any`
+Checks if two arrays contain the same items irrespective of what order they are in each array. Useful
+for the `All` in a checkbox list.
+
+```hbs
+{{input
+  type="checkbox"
+  checked=(deep-equal checkedYears organisationYears)}}
+```
+**[⬆️ back to top](#available-helpers)**
 
 ### Format helpers
 
+#### `format-blank`
+
+Shows the value is present, otherwise replaces it with default `-` or optionally provided replacement.
+
+```hbs
+{{! Shows the default "-"}}
+{{format-blank undefined}}
+
+{{! Use something other than the default.}}
+{{format-blank undefined "NA"}}
+```
+**[⬆️ back to top](#available-helpers)**
+
+#### `format-boolean`
+
+Shows Yes/No for booleans.
+
+```hbs
+{{format-boolean flag}}
+```
+**[⬆️ back to top](#available-helpers)**
+
+#### `format-increment`
+
+Simply adds 1 to a number. Useful for showing collection indicies.
+
+```hbs
+{{format-increment index}}
+```
+**[⬆️ back to top](#available-helpers)**
+
+#### `format-percentage`
+
+Converts a decimal percentage to a human readable percentage.
+
+```hbs
+{{! Shows 10% }}
+{{format-percentage 0.10}}
+```
+**[⬆️ back to top](#available-helpers)**
+
 ### Array helpers
 
-### `index-of`
+#### `index-of`
 
 Returns the index of an object in an array.
 
