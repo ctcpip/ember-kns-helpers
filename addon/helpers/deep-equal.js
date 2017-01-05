@@ -14,8 +14,11 @@ export function deepEqual(a1, a2) {
     return false;
   }
 
-  return a1.every((item) => {
-    return a2.includes(item);
+  let array1 = emberArray(a1);
+  let array2 = emberArray(a2);
+
+  return array1.every((item) => {
+    return array2.includes(item);
   });
 }
 
