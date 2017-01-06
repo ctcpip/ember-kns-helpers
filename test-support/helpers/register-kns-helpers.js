@@ -1,14 +1,14 @@
 import Ember from 'ember';
 import {
-  cleanText,
-  collectText
+  cleanTextForAcceptance,
+  collectTextForAcceptance
 } from './text';
 
 const { Test: { registerHelper } } = Ember;
 
 export function registerKnsHelpers() {
-  registerHelper('cleanText', cleanText);
-  registerHelper('collectText', collectText);
+  registerHelper('cleanText', cleanTextForAcceptance);
+  registerHelper('collectText', collectTextForAcceptance);
 };
 
 export default registerKnsHelpers;
