@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import Application from '../../app';
 import config from '../../config/environment';
+import { registerKnsHelpers } from './register-kns-helpers';
 
 const {
   assign: emberAssign,
@@ -20,6 +21,7 @@ export default function startApp(attrs) {
     application = Application.create(attributes);
     application.setupForTesting();
     application.injectTestHelpers();
+    registerKnsHelpers();
   });
 
   return application;
