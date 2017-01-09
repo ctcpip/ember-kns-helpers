@@ -17,8 +17,6 @@ export function formatNumeric([value]) {
 
   if (value >= 1000) {
     value = value.toFixed(0);
-  } else if (value < 1000 && value >= 100) {
-    value = value.toFixed(1);
   } else if (betweenZeroAndTwoDecimals) {
     value = value.toExponential(2);
   } else if (value === 0) {
@@ -28,7 +26,7 @@ export function formatNumeric([value]) {
   }
 
   if (!betweenZeroAndTwoDecimals) {
-    value = parseFloat(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
   return value;
