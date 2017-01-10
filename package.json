@@ -16,6 +16,9 @@
     "start": "ember server",
     "test": "ember try:each"
   },
+  "peerDependencies": {
+    "ember-cli-numeral": "0.2.0"
+  },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-moment-shim": "3.0.1",
