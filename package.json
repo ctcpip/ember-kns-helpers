@@ -1,6 +1,6 @@
 {
   "name": "ember-kns-helpers",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Shared helpers for all Ember apps in Kinesis",
   "keywords": [
     "ember-addon"
@@ -17,12 +17,12 @@
     "test": "ember try:each"
   },
   "peerDependencies": {
-    "ember-cli-numeral": "0.2.0"
+    "ember-cli-numeral": "git+ssh://git@github.com/kinesisptyltd/ember-cli-numeral.git"
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-moment-shim": "3.0.1",
-    "ember-cli-numeral": "0.2.0"
+    "ember-cli-numeral": "git+ssh://git@github.com/kinesisptyltd/ember-cli-numeral.git"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
