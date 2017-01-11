@@ -4,15 +4,17 @@ import { module, test } from 'qunit';
 import destroyApp from '../../helpers/destroy-app';
 import numeral from 'numeral';
 
+const { Application, run } = Ember;
+
 module('Unit | Instance Initializer | numeral', {
   beforeEach() {
-    Ember.run(() => {
-      this.application = Ember.Application.create();
+    run(() => {
+      this.application = Application.create();
       this.appInstance = this.application.buildInstance();
     });
   },
   afterEach() {
-    Ember.run(this.appInstance, 'destroy');
+    run(this.appInstance, 'destroy');
     destroyApp(this.application);
   }
 });
