@@ -1,7 +1,7 @@
 import numeral from 'numeral';
 import Helper from 'ember-helper';
 
-export function formatNumber([number, format = '0,0']) {
+export function formatNumber([number, format = 'kns']) {
   if (typeof number === 'undefined') {
     return '-';
   }
