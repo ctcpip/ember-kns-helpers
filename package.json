@@ -16,9 +16,6 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "peerDependencies": {
-    "ember-cli-numeral": "git+ssh://git@github.com/kinesisptyltd/ember-cli-numeral.git"
-  },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
     "ember-cli-moment-shim": "3.0.1",
