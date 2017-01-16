@@ -12,8 +12,6 @@ Provides additional helpers for Kinesis' apps.
   + [`format-boolean`](#format-boolean)
   + [`format-date-range`](#format-date-range)
   + [`format-increment`](#format-increment)
-  + [`format-numeric`](#format-numeric)
-  + [`format-numeric-two`](#format-numeric-two)
   + [`format-percentage`](#format-percentage)
   + [`format-time-from-now`](#format-time-from-now)
   + [`format-underscore`](#format-underscore)
