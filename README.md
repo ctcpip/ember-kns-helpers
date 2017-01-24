@@ -1,4 +1,7 @@
 # ember-kns-helpers
+[![Build Status](https://travis-ci.org/kinesisptyltd/ember-kns-helpers.svg?branch=master)](https://travis-ci.org/kinesisptyltd/ember-kns-helpers)
+[![npm Version][npm-badge]][npm]
+[![Ember Observer Score](http://emberobserver.com/badges/ember-kns-helpers.svg)](http://emberobserver.com/addons/ember-kns-helpers)
 
 Provides additional helpers for Kinesis' apps.
 
