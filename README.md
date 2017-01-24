@@ -116,3 +116,10 @@ To unlink the local package:
   - `npm unlink ember-kns-helpers`
 2. Reinstall
   - `npm install`
+
+## License
+
+ember-kns-helpers is [MIT Licensed](https://github.com/kinesisptyltd/ember-kns-helpers/blob/master/LICENSE.md).
+
+[npm]: https://www.npmjs.org/package/ember-kns-helpers
+[npm-badge]: https://img.shields.io/npm/v/ember-kns-helpers.svg?style=flat-square

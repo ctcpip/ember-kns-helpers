@@ -5,6 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
+  "license": "MIT",
   "author": "Kinesis <devs@kinesis.org>",
   "directories": {
     "doc": "doc",
