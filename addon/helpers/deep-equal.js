@@ -18,7 +18,12 @@ export function deepEqual(a1, a2) {
   let array2 = emberArray(a2);
 
   return array1.every((item) => {
-    return array2.includes(item);
+    // Support Ember 2.4 LTS
+    if (array2.includes && typeof array2.includes === 'function') {
+      return array2.includes(item);
+    } else {
+      return array2.contains(item);
+    }
   });
 }
 
