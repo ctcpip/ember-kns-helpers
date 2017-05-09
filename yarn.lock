@@ -2008,7 +2008,7 @@ ember-cli-lodash-subset@^1.0.11, ember-cli-lodash-subset@^1.0.7:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-1.0.12.tgz#af2e77eba5dcb0d77f3308d3a6fd7d3450f6e537"
 
-ember-cli-moment-shim@^3.0.1:
+ember-cli-moment-shim@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-moment-shim/-/ember-cli-moment-shim-3.1.0.tgz#ec6a39a0dcb4badeaf6dcb74a6c05b0bc576f721"
   dependencies:
