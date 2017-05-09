@@ -1,5 +1,5 @@
-import Ember from 'ember';
 import Helper from 'ember-helper';
+import moment from 'moment';
 
 export function fiscalYearLabel([input]) {
   if (input) {
