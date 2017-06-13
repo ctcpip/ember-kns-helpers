@@ -21,7 +21,7 @@
   "dependencies": {
     "ember-cli-moment-shim": "^3.1.0",
     "ember-cli-babel": "^6.0.0",
-    "ember-cli-numeral": "git+https://github.com/kinesisptyltd/ember-cli-numeral.git#numeral2.0"
+    "@kinesis/ember-cli-numeral": "^1.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

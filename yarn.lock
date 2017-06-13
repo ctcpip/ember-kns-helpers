@@ -86,6 +86,13 @@
   dependencies:
     "@glimmer/util" "^0.22.0"
 
+"@kinesis/ember-cli-numeral@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@kinesis/ember-cli-numeral/-/ember-cli-numeral-1.0.0.tgz#d076405dbf1920cbe5a63b44957250eec89358a5"
+  dependencies:
+    broccoli-funnel "^1.0.0"
+    numeral "2.0.4"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -2027,13 +2034,6 @@ ember-cli-normalize-entity-name@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-normalize-entity-name/-/ember-cli-normalize-entity-name-1.0.0.tgz#0b14f7bcbc599aa117b5fddc81e4fd03c4bad5b7"
   dependencies:
     silent-error "^1.0.0"
-
-"ember-cli-numeral@git+https://github.com/kinesisptyltd/ember-cli-numeral.git#numeral2.0":
-  version "0.2.0"
-  resolved "git+https://github.com/kinesisptyltd/ember-cli-numeral.git#c42cc1aaa6585062f5208e570115fcb61c0f18cd"
-  dependencies:
-    broccoli-funnel "^1.0.0"
-    numeral "2.0.4"
 
 ember-cli-path-utils@^1.0.0:
   version "1.0.0"
