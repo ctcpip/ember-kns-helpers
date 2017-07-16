@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/ember-kns-helpers
+    docker:
+      - image: circleci/node:6-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: ember-kns-helpers-{{ checksum "package.json" }}
+      - run:
+          name: "Install dependencies"
+          command: npm install
+      - save_cache:
+          key: ember-kns-helpers-{{ checksum "package.json" }}
+          paths:
+            - ~/ember-kns-helpers/node_modules
+      - run:
+          name: "Run tests"
+          command: npm test
