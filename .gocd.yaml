@@ -32,10 +32,6 @@ pipelines:
                     arguments:
                     - install
                 - exec:
-                    command: bower
-                    arguments:
-                    - install
-                - exec:
                     command: squirrel
                     arguments:
                     - cache
