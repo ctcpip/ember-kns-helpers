@@ -1,0 +1,57 @@
+environments:
+  development:
+    pipelines:
+      - ember-kns-helpers
+pipelines:
+  ember-kns-helpers:
+    group: development
+    materials:
+      gitMaterial1:
+        git: git@github.com:kinesisptyltd/ember-kns-helpers.git
+    stages:
+      - test:
+          jobs:
+            test:
+              artifacts:
+                - test:
+                    source: junit.xml
+                    destination: junit.xml
+              tasks:
+                - exec:
+                    command: docker-compose
+                    arguments:
+                    - up
+                    - -d
+                - exec:
+                    command: squirrel
+                    arguments:
+                    - restore
+                    - package.json
+                - exec:
+                    command: npm
+                    arguments:
+                    - install
+                - exec:
+                    command: bower
+                    arguments:
+                    - install
+                - exec:
+                    command: squirrel
+                    arguments:
+                    - cache
+                    - package.json
+                    - node_modules
+                - exec:
+                    command: xvfb-run
+                    arguments:
+                    - npm
+                    - test
+                    - --reporter xunit
+                    - --silent
+                    - >
+                    - junit.xml
+                - exec:
+                    run_if: any
+                    command: docker-compose
+                    arguments:
+                    - down
