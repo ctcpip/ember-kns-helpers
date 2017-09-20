@@ -4,7 +4,7 @@ environments:
       - ember-kns-helpers
 pipelines:
   ember-kns-helpers:
-    group: development
+    group: ember
     materials:
       gitMaterial1:
         git: git@github.com:kinesisptyltd/ember-kns-helpers.git
