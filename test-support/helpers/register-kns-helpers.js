@@ -9,11 +9,6 @@ import {
   waitForModalClose
 } from './wait-for-bs-modal';
 
-import {
-  waitForDatepickerEvent,
-  waitForDatepickerChangeDate
-} from './wait-for-datepicker';
-
 const {
   Test: {
     registerHelper,
@@ -26,8 +21,6 @@ export function registerKnsHelpers() {
   registerHelper('collectText', collectTextForAcceptance);
   registerAsyncHelper('waitForModalClose', waitForModalClose);
   registerAsyncHelper('waitForModalEvent', waitForModalEvent);
-  registerAsyncHelper('waitForDatepickerChangeDate', waitForDatepickerChangeDate);
-  registerAsyncHelper('waitForDatepickerEvent', waitForDatepickerEvent);
 }
 
 export default registerKnsHelpers;
