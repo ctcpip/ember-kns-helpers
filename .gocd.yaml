@@ -18,11 +18,6 @@ pipelines:
                     destination: junit.xml
               tasks:
                 - exec:
-                    command: docker-compose
-                    arguments:
-                    - up
-                    - -d
-                - exec:
                     command: squirrel
                     arguments:
                     - restore
@@ -46,8 +41,3 @@ pipelines:
                     - --silent
                     - >
                     - junit.xml
-                - exec:
-                    run_if: any
-                    command: docker-compose
-                    arguments:
-                    - down
