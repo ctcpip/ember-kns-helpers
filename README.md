@@ -1,7 +1,6 @@
 # ember-kns-helpers
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/kinesisptyltd/ember-kns-helpers.svg)](https://greenkeeper.io/)
-[![CircleCI](https://circleci.com/gh/kinesisptyltd/ember-kns-helpers.svg?style=shield)](https://circleci.com/gh/kinesisptyltd/ember-kns-helpers)
 [![npm Version][npm-badge]][npm]
 [![Ember Observer Score](http://emberobserver.com/badges/ember-kns-helpers.svg)](http://emberobserver.com/addons/ember-kns-helpers)
 
