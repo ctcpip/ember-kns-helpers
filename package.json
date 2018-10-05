@@ -12,7 +12,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "kinesisptyltd/ember-kns-helpers",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
